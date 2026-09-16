@@ -1,0 +1,17 @@
+{
+    "author": "Cledir Justo",
+    "description": "Monitor the power supplies of Avocent ACS 8000 console servers over SNMP (ACS8000-MIB). One service per installed power supply: OK when on, CRIT when off.",
+    "download_url": "https://github.com/cledirjusto/checkmk-avocent-snmp",
+    "files": {
+        "cmk_addons_plugins": [
+            "avocent_snmp/agent_based/avocent_acs_power_supply.py",
+            "avocent_snmp/checkman/avocent_acs_power_supply"
+        ]
+    },
+    "name": "avocent_snmp",
+    "title": "Avocent ACS console servers via SNMP",
+    "version": "0.1.0",
+    "version.min_required": "2.3.0",
+    "version.packaged": "checkmk-avocent-snmp build_mkp.py",
+    "version.usable_until": null
+}
