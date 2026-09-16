@@ -1,0 +1,16 @@
+title: Avocent ACS: Power supplies
+agents: snmp
+catalog: hw/network/avocent
+license: GPLv2
+distribution: checkmk-avocent-snmp
+description:
+ Monitors the power supplies of an Avocent ACS 8000 console server through
+ ACS8000-MIB (acsPowerSupplyStatePw1 and acsPowerSupplyStatePw2). The service
+ is OK if the power supply is on and CRIT if it is off. A power supply that was
+ discovered and is later reported as not installed is CRIT too.
+
+item:
+ The number of the power supply, "1" or "2".
+
+discovery:
+ One service is created per installed power supply.
